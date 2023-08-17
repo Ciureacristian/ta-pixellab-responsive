@@ -1,0 +1,34 @@
+{
+  "editor.renderWhitespace": "all",
+  "files.trimTrailingWhitespace": true,
+  "editor.tabSize": 2,
+  "liveServer.settings.donotShowInfoMsg": true,
+  "files.insertFinalNewline": true,
+  "editor.formatOnSave": true,
+  "html.format.wrapAttributes": "force-expand-multiline",
+  "prettier.singleQuote": true,
+  "javascript.format.semicolons": "insert",
+  "prettier.trailingComma": "all",
+  "[html]": {
+    "editor.defaultFormatter": "vscode.html-language-features"
+  },
+  "[scss]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "[search-result]": {},
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "typescript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBraces": false,
+  "javascript.format.insertSpaceAfterOpeningAndBeforeClosingNonemptyBrackets": true,
+  "[jsonc]": {},
+  "liveServer.settings.donotVerifyTags": true,
+  "launch": {
+    "configurations": [],
+    "compounds": []
+  },
+  "[javascript]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "json.schemas": [],
+  "javascript.updateImportsOnFileMove.enabled": "always",
+  "liveServer.settings.port": 5501
+}
