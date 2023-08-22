@@ -1,0 +1,44 @@
+.button {
+  display: inline-flex;
+  border: none;
+  background: transparent;
+
+  &-primary {
+    padding: 8px 24px;
+    background: $brand-primary;
+    border: 1px solid $brand-primary;
+    border-radius: 24px;
+    color: $white;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-out;
+
+    &:hover {
+      background-color: $white;
+      color: $brand-primary;
+    }
+  }
+
+  &-primary-outline {
+    padding: 8px 24px;
+    background: $white;
+    border: 1px solid $brand-primary;
+    border-radius: 24px;
+    color: $brand-primary;
+    text-transform: uppercase;
+    font-size: 16px;
+    font-weight: 300;
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-out;
+
+    &:hover {
+      background-color: $brand-primary;
+      color: $white;
+    }
+  }
+
+  &-lg {
+    padding: 20px 36px;
+    border-radius: 36px;
+  }
+}

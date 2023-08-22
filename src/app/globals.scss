@@ -1,0 +1,53 @@
+//r elative path to node_modules via sass
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/brands.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
+@import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
+
+// import via mode_Modules ~ alias
+// ./..node_modules/bootstrap/
+@import '~bootstrap/';
+@import '~bootstrap/scss/bootstrap-reboot';
+@import '~bootstrap/scss/bootstrap-grid';
+@import '~bootstrap/scss/bootstrap-utilities';
+// ./.../node_modules/bootstrap/
+
+//fonts
+@import './styles/variables.scss';
+
+//ui
+@import './styles/ui/index';
+
+//common site components
+@import './styles/common/index';
+
+
+body {
+  font-size: 16px;
+  font-family: 'Roboto', sans-serif;
+  color: $gray-primary;
+}
+
+a,
+button,
+input[type='button'] {
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+*,
+*::after,
+*::before {
+  padding: 0;
+  margin: 0;
+}
