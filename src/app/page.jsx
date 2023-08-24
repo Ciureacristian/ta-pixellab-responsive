@@ -1,5 +1,5 @@
-import Header from "./commponents/common/Header";
-import Footer from "./commponents/common/Footer";
+import Header from "../components/common/Header";
+import Footer from "../components/common/Footer";
 
 export default function Home() {
   return (
@@ -9,7 +9,7 @@ export default function Home() {
       </header>
 
       <main className="content mt-4">
-
+1
       </main>
 
       <footer className="footer">

@@ -9,11 +9,42 @@
     grid-column: 1 / 2;
     grid-row: 1 / 2;
     justify-self: start;
+    align-self: center;
+
+    ul {
+      display: flex;
+      gap: 16px;
+
+      li:first-child {
+        color: $brand-primary;
+      }
+
+      i[class*="fa-"] {
+        font-size: 24px;
+      }
+    }
+  }
+
+  &-contact {
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+
+    ul {
+      display: flex;
+      gap: 16px;
+    }
   }
 
   &-controls {
     grid-column: 2 / 3;
     grid-row: 1 / 2;
+    justify-self: end;
+    align-self: center;
+
+    ul {
+      display: flex;
+      gap: 16px;
+    }
   }
 
   &-logo {
@@ -23,7 +54,36 @@
     justify-self: center;
 
     img {
-      max-width: 80px;
+      max-width: 128px;
+    }
+
+    @include media-breakpoint-up(lg) {
+      grid-row: 2 / 3;
+    }
+  }
+
+  &-primary {
+    .nav-primary {
+      ul {
+        display: flex;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      a {
+        display: block;
+        padding: 8px 12px;
+        font-weight: 300;
+        font-size: 20px;
+        text-transform: uppercase;
+        border-radius: 16px;
+        transition: color 0.2s linear, background-color 0.4s ease-in-out;
+
+        &:hover {
+          background: $brand-primary;
+          color: $white;
+        }
+      }
     }
   }
 }

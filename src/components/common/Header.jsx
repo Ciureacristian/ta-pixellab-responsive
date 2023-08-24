@@ -1,7 +1,7 @@
 export default function Header() {
   return <>
  <section className="header-secondary">
-        <div className="header-contact">
+ <div className="header-contact">
           <ul>
             <li>
               <a href="tel:+1-877-666-1840" title="Call us">
@@ -18,7 +18,7 @@ export default function Header() {
           </ul>
         </div>
 
-        <div className="header-search">
+        <div className="header-search d-block d-lg-none">
           <ul>
             <li>
               <button type="button" title="Menu">
@@ -35,7 +35,7 @@ export default function Header() {
         </div>
 
         <div className="header-controls">
-          <ul>
+          <ul className="d-flex gap-4 flex-lg-row-reverse">
             <li>
               <button type="button" title="Cart">
                 <i className="fa-solid fa-cart-shopping"></i>
@@ -49,13 +49,16 @@ export default function Header() {
             </li>
           </ul>
         </div>
-      </section>
 
+
+     <a className="header-logo" href="/" title="Thread Affair">
       <picture className="header-logo">
         <img src="/images/logo.jpg" alt="Thread Affair - Logo" />
       </picture>
+      </a>
+      </section>
 
-      <section className="header-primary">
+      <section className="header-primary d-none d-lg-block">
         <nav className="nav-primary">
           <ul>
             <li>
