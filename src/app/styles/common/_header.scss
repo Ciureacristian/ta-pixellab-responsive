@@ -85,5 +85,28 @@
         }
       }
     }
+
+    .nav-secondary {
+      ul {
+        display: flex;
+        justify-content: center;
+        grid-area: 16px;
+      }
+
+      a {
+        display: block;
+        padding: 8px 16px;
+        font-size: 14px;
+        font-weight: 300;
+        text-transform: uppercase;
+        border-radius: 16px;
+        transition: color 0.2s linear, background-color 0.4s ease-in-out;
+
+        &:hover {
+          background: $brand-primary;
+          color: $white;
+        }
+      }
+    }
   }
 }
