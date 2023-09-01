@@ -21,6 +21,11 @@
 //common site components
 @import './styles/common/index';
 
+// home page components
+@import './styles/home/index';
+
+// catalog components
+@import './styles/catalog/index';
 
 body {
   font-size: 16px;

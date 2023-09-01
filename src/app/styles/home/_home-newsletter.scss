@@ -1,0 +1,54 @@
+.home-newsletter {
+  background: $gray-secondary;
+  color: $white;
+
+
+  &>form {
+    display: flex;
+    flex-direction: column;
+    gap: 36px;
+    align-items: center;
+    padding: 16px 0;
+
+    label[for='email'] {
+      font-size: 55px;
+      line-height: 36px;
+      text-align: center;
+      text-transform: uppercase;
+
+      span {
+        display: block;
+        font-size: 19px;
+      }
+    }
+
+    input#email {
+      background: transparent;
+      border: none;
+      color: $white;
+      padding-bottom: 4px;
+      border-bottom: 2px solid $white;
+      width: 75%;
+      text-align: center;
+    }
+
+    button[type='submit'] {
+      font-size: 19px;
+      font-weight: 300;
+      line-height: 24px;
+      text-transform: uppercase;
+      padding-right: 128px;
+      background: url('/images/icons/mail-send.png');
+      min-height: 60px;
+      display: inline-block;
+    }
+
+    @include media-breakpoint-up(lg) {
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      gap: 128px;
+      min-width: 236px;
+    }
+  }
+}
