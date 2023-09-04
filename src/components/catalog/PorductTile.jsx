@@ -5,15 +5,15 @@ export default function PorducTile () {
 
         <picture>
           <img src="/images/products/product-01a.jpg" alt="Thread Affair Monochrome Suit" />
-
+          <span className="badge badge-primary">%</span>
         </picture>
       </a>
-      <span className="badge badge-primary">%</span>
+
 
 
       <h1 className="product-tile-title">
         <a href="" title="Thread Affair Monochrome Suit">
-          Thread Affair Monochrome Suit
+          <span>Thread Affair </span> <span>Monochrome</span> Suit
           </a>
       </h1>
       <h2 className="product-tile-subtitle">
@@ -21,11 +21,19 @@ export default function PorducTile () {
         London fit semi-slim
         </a>
       </h2>
+
+      <section className="product-tile-content">
+                <span className="product-tile-price">499.00</span>
+
+                <span className="product-price">
+                  USD <span>399.00</span>
+                </span>
+              </section>
     </header>
 
-    <section className="product-tile-content">
-      {/* add pricing */}
-    </section>
+
+
+
 
     <footer className="product-tile-footer">
       <button className="button button-primary">Add to Cart</button>

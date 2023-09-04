@@ -9,11 +9,11 @@ export default function CatalogPreview() {
       </li>
 
       <li>
-        <PorductTile1></PorductTile1>
+        <PorducTile></PorducTile>
       </li>
 
       <li>
-       <PorductTile2></PorductTile2>
+       <PorducTile></PorducTile>
       </li>
     </ul>
 

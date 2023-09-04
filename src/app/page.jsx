@@ -42,10 +42,10 @@ export default function Home() {
               <PorducTile></PorducTile>
             </li>
             <li className="col-12 col-lg-3 mb-5">
-              <PorductTile1></PorductTile1>
+              <PorducTile></PorducTile>
             </li>
             <li className="col-12 col-lg-3">
-             <PorductTile2></PorductTile2>
+             <PorducTile></PorducTile>
             </li>
           </ul>
         </div>
