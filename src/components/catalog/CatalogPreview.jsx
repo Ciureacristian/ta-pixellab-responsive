@@ -1,5 +1,6 @@
 import PorducTile from "./PorductTile";
-
+import PorductTile1 from "./PorducTile1";
+import PorductTile2 from "./PorducTile2";
 export default function CatalogPreview() {
   return (
     <ul className="catalog-preview">
@@ -8,11 +9,11 @@ export default function CatalogPreview() {
       </li>
 
       <li>
-        <PorducTile></PorducTile>
+        <PorductTile1></PorductTile1>
       </li>
 
       <li>
-        <PorducTile></PorducTile>
+       <PorductTile2></PorductTile2>
       </li>
     </ul>
 

@@ -4,6 +4,9 @@ import Payment from "@/components/home/Payment";
 import HomeCatalogPreview from "@/components/home/HomeCatalogPreview";
 import PorducTile from "@/components/catalog/PorductTile";
 import HomeNewsletter from "@/components/home/HomeNewsletter";
+import HomeCarousel from "@/components/home/HomeCarousel";
+import PorductTile1 from "@/components/catalog/PorducTile1";
+import PorductTile2 from "@/components/catalog/PorducTile2";
 
 export default function Home() {
   return (
@@ -17,6 +20,9 @@ export default function Home() {
       </header>
 
       <main className="content">
+      <header>
+          <HomeCarousel></HomeCarousel>
+      </header>
         <div className="layout-css">
           <HomeCatalogPreview></HomeCatalogPreview>
         </div>
@@ -36,10 +42,10 @@ export default function Home() {
               <PorducTile></PorducTile>
             </li>
             <li className="col-12 col-lg-3 mb-5">
-              <PorducTile></PorducTile>
+              <PorductTile1></PorductTile1>
             </li>
             <li className="col-12 col-lg-3">
-              <PorducTile></PorducTile>
+             <PorductTile2></PorductTile2>
             </li>
           </ul>
         </div>

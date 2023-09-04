@@ -5,10 +5,11 @@ export default function PorducTile () {
 
         <picture>
           <img src="/images/products/product-01a.jpg" alt="Thread Affair Monochrome Suit" />
+
         </picture>
       </a>
-
       <span className="badge badge-primary">%</span>
+
 
       <h1 className="product-tile-title">
         <a href="" title="Thread Affair Monochrome Suit">
@@ -29,5 +30,7 @@ export default function PorducTile () {
     <footer className="product-tile-footer">
       <button className="button button-primary">Add to Cart</button>
     </footer>
+
+
   </article>
 }
