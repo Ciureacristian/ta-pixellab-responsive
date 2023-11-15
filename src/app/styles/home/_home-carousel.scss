@@ -1,37 +1,37 @@
-.content-banner {
-  height: 716px;
-  background: url('/images/banners/banner-02.jpg') no-repeat center center / cover;
-  color: $white;
-  line-height: 33px;
+// .content-banner {
+//   height: 716px;
+//   background: url('/images/banners/banner-02.jpg') no-repeat center center / cover;
+//   color: $white;
+//   line-height: 33px;
 
-  &-inner {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    height: 100%;
+//   &-inner {
+//     display: flex;
+//     flex-direction: column;
+//     justify-content: center;
+//     align-items: center;
+//     height: 100%;
 
-    .banner-title {
-      font-size: 49px;
-      margin: 0;
-    }
+//     .banner-title {
+//       font-size: 49px;
+//       margin: 0;
+//     }
 
-    .banner-subtitle {
-      font-size: 27px;
-      font-weight: 300;
-    }
+//     .banner-subtitle {
+//       font-size: 27px;
+//       font-weight: 300;
+//     }
 
-    @include media-breakpoint-up(lg) {
-      padding-right: 80px;
-      align-items: flex-end;
+//     @include media-breakpoint-up(lg) {
+//       padding-right: 80px;
+//       align-items: flex-end;
 
-      .banner-title {
-        font-size: 75px;
-      }
+//       .banner-title {
+//         font-size: 75px;
+//       }
 
-      .banner-subtitle {
-        font-size: 42px;
-      }
-    }
-  }
-}
+//       .banner-subtitle {
+//         font-size: 42px;
+//       }
+//     }
+//   }
+// }

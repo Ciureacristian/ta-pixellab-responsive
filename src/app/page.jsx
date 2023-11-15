@@ -1,65 +1,63 @@
-import Header from "../components/common/Header";
-import Footer from "../components/common/Footer";
-import Payment from "@/components/home/Payment";
-import HomeCatalogPreview from "@/components/home/HomeCatalogPreview";
-import PorducTile from "@/components/catalog/PorductTile";
-import HomeNewsletter from "@/components/home/HomeNewsletter";
-import HomeCarousel from "@/components/home/HomeCarousel";
-import PorductTile1 from "@/components/catalog/PorducTile1";
-import PorductTile2 from "@/components/catalog/PorducTile2";
+'use client';
+
+import Header from '../components/common/Header';
+import Footer from '../components/common/Footer';
+import Payment from '@/components/home/Payment';
+import HomeCatalogPreview from '@/components/home/HomeCatalogPreview';
+import PorducTile from '@/components/catalog/PorductTile';
+import HomeNewsletter from '@/components/home/HomeNewsletter';
+import HomeCarousel from '@/components/home/HomeCarousel';
+import PorductTile1 from '@/components/catalog/PorducTile1';
+import PorductTile2 from '@/components/catalog/PorducTile2';
 
 export default function Home() {
   return (
     <>
+      <div className="home">
+        <header className="header container mt-lg-4">
+          <Header></Header>
+        </header>
 
-<div className="home">
+        <main className="content">
+          <header>
+            <HomeCarousel></HomeCarousel>
+          </header>
+          <div className="layout-css">
+            <HomeCatalogPreview></HomeCatalogPreview>
+          </div>
 
+          <div className="layout-flex">
+            <HomeCatalogPreview></HomeCatalogPreview>
+          </div>
 
-      <header className="header container mt-lg-4">
-      <Header></Header>
-      </header>
+          <div className="layout-grid">
+            <HomeCatalogPreview></HomeCatalogPreview>
+          </div>
 
-      <main className="content">
-      <header>
-          <HomeCarousel></HomeCarousel>
-      </header>
-        <div className="layout-css">
-          <HomeCatalogPreview></HomeCatalogPreview>
-        </div>
+          {/*layout bootstap style */}
+          <div className="container">
+            <ul className="row justify-content-between">
+              <li className="col-12 col-lg-3 mb-5">
+                <PorducTile></PorducTile>
+              </li>
+              <li className="col-12 col-lg-3 mb-5">
+                <PorducTile></PorducTile>
+              </li>
+              <li className="col-12 col-lg-3">
+                <PorducTile></PorducTile>
+              </li>
+            </ul>
+          </div>
 
-        <div className="layout-flex">
-        <HomeCatalogPreview></HomeCatalogPreview>
-        </div>
+          <HomeNewsletter></HomeNewsletter>
 
-        <div className="layout-grid">
-        <HomeCatalogPreview></HomeCatalogPreview>
-        </div>
+          <Payment></Payment>
+        </main>
 
-  {/*layout bootstap style */}
-        <div className="container">
-          <ul className="row justify-content-between">
-            <li className="col-12 col-lg-3 mb-5">
-              <PorducTile></PorducTile>
-            </li>
-            <li className="col-12 col-lg-3 mb-5">
-              <PorducTile></PorducTile>
-            </li>
-            <li className="col-12 col-lg-3">
-             <PorducTile></PorducTile>
-            </li>
-          </ul>
-        </div>
-
-        <HomeNewsletter></HomeNewsletter>
-
-    <Payment></Payment>
-      </main>
-
-      <footer className="footer">
-      <Footer></Footer>
-      </footer>
+        <footer className="footer">
+          <Footer></Footer>
+        </footer>
       </div>
-      </>
-
+    </>
   );
 }

@@ -4,6 +4,7 @@
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/regular.scss';
 @import './../../node_modules/@fortawesome/fontawesome-free/scss/solid.scss';
 
+
 // import via mode_Modules ~ alias
 // ./..node_modules/bootstrap/
 @import '~bootstrap/';
@@ -11,6 +12,8 @@
 @import '~bootstrap/scss/bootstrap-grid';
 @import '~bootstrap/scss/bootstrap-utilities';
 // ./.../node_modules/bootstrap/
+
+@import './styles/carousel';
 
 //fonts
 @import './styles/variables.scss';
