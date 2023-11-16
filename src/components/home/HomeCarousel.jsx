@@ -5,7 +5,6 @@ const imagePaths = [
   '/images/banners/banner-01.jpg',
   '/images/banners/banner-02.jpg',
   '/images/banners/banner-03.jpg',
-  '/images/banners/banner-04.jpg',
   '/images/banners/banner-05.jpg',
 ];
 
@@ -30,27 +29,28 @@ export default function HomeCarousel() {
               return (
                 <li key={index} className="glide__slide">
                   <picture>
-                    <img src={imagePath} alt="" />
+                    <img src={imagePath} alt=""></img>
                   </picture>
                 </li>
               );
             })}
           </ul>
         </div>
-      </div>
-      <div className="glide__arrows" data-glide-el="controls">
-        <button
-          className="glide__arrow glide__arrow--left button button-primary"
-          data-glide-dir="<"
-        >
-          prev
-        </button>
-        <button
-          className="glide__arrow glide__arrow--right button button-primary"
-          data-glide-dir=">"
-        >
-          next
-        </button>
+
+        <div className="glide__arrows" data-glide-el="controls">
+          <button
+            className="glide__arrow glide__arrow--left button button-primary"
+            data-glide-dir="<"
+          >
+            prev
+          </button>
+          <button
+            className="glide__arrow glide__arrow--right button button-primary"
+            data-glide-dir=">"
+          >
+            next
+          </button>
+        </div>
       </div>
     </div>
   );
