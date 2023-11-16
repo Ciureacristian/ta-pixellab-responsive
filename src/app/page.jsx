@@ -10,6 +10,32 @@ import HomeCarousel from '@/components/home/HomeCarousel';
 import PorductTile1 from '@/components/catalog/PorducTile1';
 import PorductTile2 from '@/components/catalog/PorducTile2';
 
+const productImages1 = [
+  {
+    main: '/images/products/product-01a.jpg',
+    alt: '.images/products/product-01b.jpg',
+  },
+  {
+    main: '/images/products/product-02a.jpg',
+    alt: '.images/products/product-02b.jpg',
+  },
+  {
+    main: '/images/products/product-03a.jpg',
+  },
+];
+
+const productImages2 = [
+  {
+    main: '/images/products/product-04a.jpg',
+  },
+  {
+    main: '/images/products/product-05a.jpg',
+  },
+  {
+    main: '/images/products/product-06a.jpg',
+  },
+];
+
 export default function Home() {
   return (
     <>
@@ -23,15 +49,21 @@ export default function Home() {
             <HomeCarousel></HomeCarousel>
           </header>
           <div className="layout-css">
-            <HomeCatalogPreview></HomeCatalogPreview>
+            <HomeCatalogPreview
+              productImages={productImages1}
+            ></HomeCatalogPreview>
           </div>
 
           <div className="layout-flex">
-            <HomeCatalogPreview></HomeCatalogPreview>
+            <HomeCatalogPreview
+              productImages={productImages2}
+            ></HomeCatalogPreview>
           </div>
 
           <div className="layout-grid">
-            <HomeCatalogPreview></HomeCatalogPreview>
+            <HomeCatalogPreview
+              productImages={productImages1}
+            ></HomeCatalogPreview>
           </div>
 
           {/*layout bootstap style */}
